@@ -1,1 +1,1 @@
-# python_test
+# tests for addressbook app
