@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Checked the test file">
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Removed code which is not used">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
     </list>
@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594589167736</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Removed code which is not used">
+      <created>1594601836539</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594601836540</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,7 +137,8 @@
     <MESSAGE value="Updated project description" />
     <MESSAGE value="Added a file with test" />
     <MESSAGE value="Checked the test file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Checked the test file" />
+    <MESSAGE value="Removed code which is not used" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed code which is not used" />
   </component>
   <component name="WindowStateProjectService">
     <state x="669" y="163" key="#pytest_in_test_add_group.py" timestamp="1594588764303">
