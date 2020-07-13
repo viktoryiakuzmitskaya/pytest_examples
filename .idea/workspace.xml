@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Introduced additional class for a group">
-      <change afterPath="$PROJECT_DIR$/test_add_contact.py" afterDir="false" />
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Added test for adding a contact">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594603746630</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added test for adding a contact">
+      <created>1594605273678</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594605273678</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,7 +193,8 @@
     <MESSAGE value="Extracted methods" />
     <MESSAGE value="Introduced parameters to methods" />
     <MESSAGE value="Introduced additional class for a group" />
-    <option name="LAST_COMMIT_MESSAGE" value="Introduced additional class for a group" />
+    <MESSAGE value="Added test for adding a contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test for adding a contact" />
   </component>
   <component name="WindowStateProjectService">
     <state x="669" y="163" key="#pytest_in_test_add_group.py" timestamp="1594588764303">
@@ -197,22 +205,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594591653790" />
-    <state width="1899" height="157" key="GridCell.Tab.0.bottom" timestamp="1594603965170">
+    <state width="1899" height="196" key="GridCell.Tab.0.bottom" timestamp="1594605884293">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="157" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594603965170" />
-    <state width="1899" height="157" key="GridCell.Tab.0.center" timestamp="1594603965170">
+    <state width="1899" height="196" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594605884293" />
+    <state width="1899" height="196" key="GridCell.Tab.0.center" timestamp="1594605884293">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="157" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594603965170" />
-    <state width="1899" height="157" key="GridCell.Tab.0.left" timestamp="1594603965170">
+    <state width="1899" height="196" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594605884293" />
+    <state width="1899" height="196" key="GridCell.Tab.0.left" timestamp="1594605884293">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="157" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594603965170" />
-    <state width="1899" height="157" key="GridCell.Tab.0.right" timestamp="1594603965170">
+    <state width="1899" height="196" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594605884293" />
+    <state width="1899" height="196" key="GridCell.Tab.0.right" timestamp="1594605884293">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="157" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594603965170" />
+    <state width="1899" height="196" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594605884293" />
     <state x="685" y="300" key="RollbackChangesDialog" timestamp="1594605020175">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -229,9 +237,9 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="769" y="494" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594587633853" />
-    <state x="803" y="352" width="751" height="455" key="refactoring.ChangeSignatureDialog" timestamp="1594602926416">
+    <state x="803" y="352" width="1007" height="764" key="refactoring.ChangeSignatureDialog" timestamp="1594606251359">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="803" y="352" width="751" height="455" key="refactoring.ChangeSignatureDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594602926416" />
+    <state x="803" y="352" width="1007" height="764" key="refactoring.ChangeSignatureDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594606251359" />
   </component>
 </project>
