@@ -19,12 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Extracted subsidiary class for session management (test for group creation only)">
-      <change afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Extracted subsidiary class for group management">
+      <change afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application_group.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application_contact.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +61,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IT\QA\Courses\Python-Programming-For-Testers\Projects\python_test\model" />
       <recent name="D:\IT\QA\Courses\Python-Programming-For-Testers\Projects\python_test\test" />
       <recent name="D:\IT\QA\Courses\Python-Programming-For-Testers\Projects\python_test\fixture" />
-      <recent name="D:\IT\QA\Courses\Python-Programming-For-Testers\Projects\python_test\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_contact.py">
     <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,7 +79,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_add_contact.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_contact.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -99,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
+        <item itemvalue="Python tests.pytest in test_add_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595200869103</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Extracted subsidiary class for group management">
+      <created>1595201253803</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1595201253803</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,7 +261,8 @@
     <MESSAGE value="Changed framework from unittest to pytest and implemented fixtures both for groups and contacts" />
     <MESSAGE value="Added packages for different responsibility areas (test for group creation only)" />
     <MESSAGE value="Extracted subsidiary class for session management (test for group creation only)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extracted subsidiary class for session management (test for group creation only)" />
+    <MESSAGE value="Extracted subsidiary class for group management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extracted subsidiary class for group management" />
   </component>
   <component name="WindowStateProjectService">
     <state x="669" y="163" key="#pytest_in_test_add_group.py" timestamp="1594588764303">
@@ -263,22 +273,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594591653790" />
-    <state width="1899" height="401" key="GridCell.Tab.0.bottom" timestamp="1595200076262">
+    <state width="1899" height="401" key="GridCell.Tab.0.bottom" timestamp="1595202189955">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="401" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595200076262" />
-    <state width="1899" height="401" key="GridCell.Tab.0.center" timestamp="1595200076262">
+    <state width="1899" height="401" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595202189955" />
+    <state width="1899" height="401" key="GridCell.Tab.0.center" timestamp="1595202189954">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="401" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595200076262" />
-    <state width="1899" height="401" key="GridCell.Tab.0.left" timestamp="1595200076262">
+    <state width="1899" height="401" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595202189954" />
+    <state width="1899" height="401" key="GridCell.Tab.0.left" timestamp="1595202189954">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="401" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595200076262" />
-    <state width="1899" height="401" key="GridCell.Tab.0.right" timestamp="1595200076262">
+    <state width="1899" height="401" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595202189954" />
+    <state width="1899" height="401" key="GridCell.Tab.0.right" timestamp="1595202189955">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="401" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595200076262" />
+    <state width="1899" height="401" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595202189955" />
     <state x="685" y="300" key="RollbackChangesDialog" timestamp="1594605020175">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
