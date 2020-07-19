@@ -13,6 +13,7 @@ class TestAddContact(unittest.TestCase):
         wd.get("https://localhost/addressbook/")
 
     def login(self, wd, username, password):
+        self.open_home_page(wd)
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(username)
@@ -69,6 +70,7 @@ class TestAddContact(unittest.TestCase):
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys(contact.byear)
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
+        self.return_to_home_page(wd)
 
     def return_to_home_page(self, wd):
         wd.find_element_by_link_text("home page").click()
@@ -78,12 +80,10 @@ class TestAddContact(unittest.TestCase):
     
     def test_add_contact(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, "admin", "secret")
         self.create_contact(wd, Contact(firstname="John", middlename="Robert", lastname="Smith", nickname="Bob", title="Sales manager", company="Some company",
                             address="New York, 45th Street, 57", home="56789450", mobile="37890406", work="47890593", fax="47589341",
                             email="jsmith@smth.com", bday="14", bmonth="November", byear="1993"))
-        self.return_to_home_page(wd)
         self.logout(wd)
 
     def tearDown(self):
