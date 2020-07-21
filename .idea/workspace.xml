@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Added test for a first contact modification">
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Extracted a method for filling out group form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +81,22 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_contact.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_del_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,22 +110,6 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_contact.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_del_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -147,9 +149,9 @@
       <list>
         <item itemvalue="Python tests.pytest in test" />
         <item itemvalue="Python tests.pytest in test_edit_contact.py" />
+        <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.pytest in test_edit_group.py" />
         <item itemvalue="Python tests.pytest in test_del_contact.py" />
-        <item itemvalue="Python tests.pytest in test_del_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595250482414</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Extracted a method for filling out group form">
+      <created>1595367234468</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1595367234469</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,7 +366,8 @@
     <MESSAGE value="Added test for a first contact deletion" />
     <MESSAGE value="Added test for a first group modification" />
     <MESSAGE value="Added test for a first contact modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test for a first contact modification" />
+    <MESSAGE value="Extracted a method for filling out group form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extracted a method for filling out group form" />
   </component>
   <component name="WindowStateProjectService">
     <state x="669" y="163" key="#pytest_in_test_add_group.py" timestamp="1594588764303">
@@ -368,22 +378,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595206591795" />
-    <state width="1899" height="319" key="GridCell.Tab.0.bottom" timestamp="1595366066817">
+    <state width="1899" height="290" key="GridCell.Tab.0.bottom" timestamp="1595369852751">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="319" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595366066817" />
-    <state width="1899" height="319" key="GridCell.Tab.0.center" timestamp="1595366066817">
+    <state width="1899" height="290" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595369852751" />
+    <state width="1899" height="290" key="GridCell.Tab.0.center" timestamp="1595369852750">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="319" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595366066817" />
-    <state width="1899" height="319" key="GridCell.Tab.0.left" timestamp="1595366066817">
+    <state width="1899" height="290" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595369852750" />
+    <state width="1899" height="290" key="GridCell.Tab.0.left" timestamp="1595369852750">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="319" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595366066817" />
-    <state width="1899" height="319" key="GridCell.Tab.0.right" timestamp="1595366066817">
+    <state width="1899" height="290" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595369852750" />
+    <state width="1899" height="290" key="GridCell.Tab.0.right" timestamp="1595369852750">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="319" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595366066817" />
+    <state width="1899" height="290" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595369852750" />
     <state x="685" y="300" key="RollbackChangesDialog" timestamp="1594605020175">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
