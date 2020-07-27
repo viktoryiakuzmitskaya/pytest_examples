@@ -44,7 +44,7 @@ class ContactHelper:
     def delete_first_contact(self):
         wd = self.app.wd
         # check whether delete is available, if not, go to the home page
-        self.is_on_home_page()
+        self.return_to_home_page()
         # select first contact
         wd.find_element_by_name("selected[]").click()
         # submit deletion
@@ -55,7 +55,7 @@ class ContactHelper:
     def edit_first_contact(self, new_contact_data):
         wd = self.app.wd
         # check whether edit is available, if not, go to the home page
-        self.is_on_home_page()
+        self.return_to_home_page()
         # select first contact
         wd.find_element_by_name("selected[]").click()
         # edit contact
@@ -65,16 +65,12 @@ class ContactHelper:
         wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
         self.return_to_home_page()
 
-    def is_on_home_page(self):
-        wd = self.app.wd
-        if not (wd.current_url.endswith("/addressbook/")):
-            self.return_to_home_page()
-
     def return_to_home_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
+        if not (wd.current_url.endswith("/addressbook/")):
+            wd.find_element_by_link_text("home").click()
 
     def count(self):
         wd = self.app.wd
-        self.is_on_home_page()
+        self.return_to_home_page()
         return len(wd.find_elements_by_name("selected[]"))
