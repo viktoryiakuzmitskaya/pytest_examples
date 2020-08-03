@@ -16,15 +16,18 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:caching_and_hashing" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Added caching and hashing for groups">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,7 +426,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="caching_and_hashing" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -472,22 +487,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595206591795" />
-    <state width="1899" height="462" key="GridCell.Tab.0.bottom" timestamp="1596412284277">
+    <state width="1899" height="339" key="GridCell.Tab.0.bottom" timestamp="1596459998391">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="462" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596412284277" />
-    <state width="1899" height="462" key="GridCell.Tab.0.center" timestamp="1596412284277">
+    <state width="1899" height="339" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596459998391" />
+    <state width="1899" height="339" key="GridCell.Tab.0.center" timestamp="1596459998391">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="462" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596412284277" />
-    <state width="1899" height="462" key="GridCell.Tab.0.left" timestamp="1596412284277">
+    <state width="1899" height="339" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596459998391" />
+    <state width="1899" height="339" key="GridCell.Tab.0.left" timestamp="1596459998390">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="462" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596412284277" />
-    <state width="1899" height="462" key="GridCell.Tab.0.right" timestamp="1596412284277">
+    <state width="1899" height="339" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596459998390" />
+    <state width="1899" height="339" key="GridCell.Tab.0.right" timestamp="1596459998391">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="462" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596412284277" />
+    <state width="1899" height="339" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596459998391" />
     <state width="1899" height="457" key="GridCell.Tab.1.bottom" timestamp="1596411882117">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -516,10 +531,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="461" y="225" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595193986216" />
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1596408179650">
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1596459887141">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596408179650" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596459887141" />
     <state x="769" y="494" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594587633853">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
