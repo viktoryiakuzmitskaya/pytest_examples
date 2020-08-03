@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Added caching and hashing for contacts">
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Added random deletion and modification for groups">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +64,7 @@
       <recent name="D:\IT\QA\Courses\Python-Programming-For-Testers\Projects\python_test\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_del_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_del_contact.py">
     <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,22 +78,6 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_contact.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -129,6 +113,22 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_edit_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_edit_contact.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_edit_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_del_contact.py" />
+        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
+        <item itemvalue="Python tests.pytest in test" />
         <item itemvalue="Python tests.pytest in test_del_group.py" />
         <item itemvalue="Python tests.pytest in test_edit_group.py" />
-        <item itemvalue="Python tests.pytest in test" />
-        <item itemvalue="Python tests.pytest in test_add_contact.py" />
-        <item itemvalue="Python tests.pytest in test_del_contact.py" />
       </list>
     </recent_temporary>
   </component>
@@ -411,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596412379757</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Added random deletion and modification for groups">
+      <created>1596414422823</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1596414422823</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -438,7 +445,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Introduced additional class for a contact" />
     <MESSAGE value="Moved navigation to certain pages from test into help methods for both groups and contacts" />
     <MESSAGE value="Changed framework from unittest to pytest and implemented fixtures both for groups and contacts" />
     <MESSAGE value="Added packages for different responsibility areas (test for group creation only)" />
@@ -463,7 +469,8 @@
     <MESSAGE value="Added sorting lists before comparison - for contacts" />
     <MESSAGE value="Added caching and hashing for groups" />
     <MESSAGE value="Added caching and hashing for contacts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added caching and hashing for contacts" />
+    <MESSAGE value="Added random deletion and modification for groups" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added random deletion and modification for groups" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596410339927">
@@ -478,22 +485,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595206591795" />
-    <state width="1899" height="390" key="GridCell.Tab.0.bottom" timestamp="1596413638141">
+    <state width="1899" height="340" key="GridCell.Tab.0.bottom" timestamp="1596442312113">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="390" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596413638141" />
-    <state width="1899" height="390" key="GridCell.Tab.0.center" timestamp="1596413638141">
+    <state width="1899" height="340" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596442312113" />
+    <state width="1899" height="340" key="GridCell.Tab.0.center" timestamp="1596442312113">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="390" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596413638141" />
-    <state width="1899" height="390" key="GridCell.Tab.0.left" timestamp="1596413638141">
+    <state width="1899" height="340" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596442312113" />
+    <state width="1899" height="340" key="GridCell.Tab.0.left" timestamp="1596442312113">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="390" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596413638141" />
-    <state width="1899" height="390" key="GridCell.Tab.0.right" timestamp="1596413638141">
+    <state width="1899" height="340" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596442312113" />
+    <state width="1899" height="340" key="GridCell.Tab.0.right" timestamp="1596442312113">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="390" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596413638141" />
+    <state width="1899" height="340" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596442312113" />
     <state width="1899" height="457" key="GridCell.Tab.1.bottom" timestamp="1596411882117">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -510,10 +517,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1899" height="457" key="GridCell.Tab.1.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596411882117" />
-    <state x="775" y="514" key="ReplaceDuplicatesPrompt" timestamp="1596413484028">
+    <state x="775" y="514" key="ReplaceDuplicatesPrompt" timestamp="1596441276441">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="775" y="514" key="ReplaceDuplicatesPrompt/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596413484028" />
+    <state x="775" y="514" key="ReplaceDuplicatesPrompt/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596441276441" />
     <state x="685" y="300" key="RollbackChangesDialog" timestamp="1594605020175">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -534,9 +541,9 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="803" y="352" width="1007" height="764" key="refactoring.ChangeSignatureDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1594606251359" />
-    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1596397447786">
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1596441845468">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596397447786" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596441845468" />
   </component>
 </project>
