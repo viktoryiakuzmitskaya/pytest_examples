@@ -25,9 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Fixed test on some contact modification">
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Optimized work with strings in session helper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -441,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596573349085</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Optimized work with strings in session helper">
+      <created>1597151489561</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1597151489561</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -459,7 +467,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -468,7 +488,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added packages for different responsibility areas (test for group creation only)" />
     <MESSAGE value="Extracted subsidiary class for session management (test for group creation only)" />
     <MESSAGE value="Extracted subsidiary class for group management" />
     <MESSAGE value="Extracted helper class for contact management and manager class for initialization of all helpers" />
@@ -493,7 +512,8 @@
     <MESSAGE value="Added random deletion and modification for groups" />
     <MESSAGE value="Added random deletion and modification for contacts" />
     <MESSAGE value="Fixed test on some contact modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed test on some contact modification" />
+    <MESSAGE value="Optimized work with strings in session helper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized work with strings in session helper" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596410339927">
@@ -508,22 +528,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595206591795" />
-    <state width="1899" height="248" key="GridCell.Tab.0.bottom" timestamp="1597150234691">
+    <state width="1899" height="224" key="GridCell.Tab.0.bottom" timestamp="1597168015004">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="248" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597150234691" />
-    <state width="1899" height="248" key="GridCell.Tab.0.center" timestamp="1597150234691">
+    <state width="1899" height="224" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597168015004" />
+    <state width="1899" height="224" key="GridCell.Tab.0.center" timestamp="1597168015003">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="248" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597150234691" />
-    <state width="1899" height="248" key="GridCell.Tab.0.left" timestamp="1597150234691">
+    <state width="1899" height="224" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597168015003" />
+    <state width="1899" height="224" key="GridCell.Tab.0.left" timestamp="1597168015003">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="248" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597150234691" />
-    <state width="1899" height="248" key="GridCell.Tab.0.right" timestamp="1597150234691">
+    <state width="1899" height="224" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597168015003" />
+    <state width="1899" height="224" key="GridCell.Tab.0.right" timestamp="1597168015003">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="248" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597150234691" />
+    <state width="1899" height="224" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597168015003" />
     <state width="1899" height="380" key="GridCell.Tab.1.bottom" timestamp="1596575676406">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -552,10 +572,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="461" y="225" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595193986216" />
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1596573437456">
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1597151512187">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1596573437456" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597151512187" />
     <state x="769" y="494" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594587633853">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
