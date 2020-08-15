@@ -25,11 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Split command line options - separate for browser and for tested app info (baseurl, username, password)">
-      <change afterPath="$PROJECT_DIR$/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/add_group.py" afterDir="false" />
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Introduced data package with a separate file containing test data for a group creation test">
+      <change afterPath="$PROJECT_DIR$/data/groups.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generator/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generator/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,28 @@
       <recent name="D:\IT\QA\Courses\Python-Programming-For-Testers\Projects\python_test\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
+  <component name="RunManager" selected="Python.group">
+    <configuration name="group" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator/group.py" />
+      <option name="PARAMETERS" value="-n 10 -f data/test.json" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -90,22 +111,6 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;--browser\u003dchrome&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_contact.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -206,7 +211,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest in test_add_contact.py" />
+      <item itemvalue="Python.group" />
       <item itemvalue="Python tests.pytest in test_add_group.py" />
       <item itemvalue="Python tests.pytest in test_del_group.py" />
       <item itemvalue="Python tests.pytest in test_contact_data.py" />
@@ -217,11 +222,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.group" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_del_group.py" />
         <item itemvalue="Python tests.pytest in test_contact_data.py" />
         <item itemvalue="Python tests.pytest in test" />
-        <item itemvalue="Python tests.pytest in test_add_contact.py" />
       </list>
     </recent_temporary>
   </component>
@@ -235,13 +240,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594587421217</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added a file with test">
-      <created>1594588045246</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1594588045246</updated>
     </task>
     <task id="LOCAL-00004" summary="Checked the test file">
       <created>1594589167736</created>
@@ -579,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597512590571</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Introduced data package with a separate file containing test data for a group creation test">
+      <created>1597517866396</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1597517866398</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -618,7 +623,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed two test that failed i previous commit - added returning on the home page before editing or deleting the contact" />
     <MESSAGE value="Added preconditions checking for deletion and modification of groups" />
     <MESSAGE value="Added preconditions checking for deletion and modification of contacts" />
     <MESSAGE value="Added loading group information into lists, checking lists length for add/delete/edit group" />
@@ -643,13 +647,14 @@
     <MESSAGE value="Added passing parameters to tests from the command line at startup, combined tests for all contact field" />
     <MESSAGE value="Removed list comprehension for every contact field generation" />
     <MESSAGE value="Split command line options - separate for browser and for tested app info (baseurl, username, password)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Split command line options - separate for browser and for tested app info (baseurl, username, password)" />
+    <MESSAGE value="Introduced data package with a separate file containing test data for a group creation test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduced data package with a separate file containing test data for a group creation test" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597511522104">
+    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597526791929">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597511522104" />
+    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597526791929" />
     <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1597509656818">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -690,22 +695,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="335" key="FileChooserDialogImpl/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597509676587" />
-    <state width="1899" height="202" key="GridCell.Tab.0.bottom" timestamp="1597511586891">
+    <state width="1899" height="258" key="GridCell.Tab.0.bottom" timestamp="1597526794085">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597511586891" />
-    <state width="1899" height="202" key="GridCell.Tab.0.center" timestamp="1597511586891">
+    <state width="1899" height="258" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597526794085" />
+    <state width="1899" height="258" key="GridCell.Tab.0.center" timestamp="1597526794085">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597511586891" />
-    <state width="1899" height="202" key="GridCell.Tab.0.left" timestamp="1597511586891">
+    <state width="1899" height="258" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597526794085" />
+    <state width="1899" height="258" key="GridCell.Tab.0.left" timestamp="1597526794084">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597511586891" />
-    <state width="1899" height="202" key="GridCell.Tab.0.right" timestamp="1597511586891">
+    <state width="1899" height="258" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597526794084" />
+    <state width="1899" height="258" key="GridCell.Tab.0.right" timestamp="1597526794085">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597511586891" />
+    <state width="1899" height="258" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597526794085" />
     <state width="1899" height="230" key="GridCell.Tab.1.bottom" timestamp="1597324114147">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -734,10 +739,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="461" y="225" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1595193986216" />
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1597517210412">
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1597517876584">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597517210412" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597517876584" />
     <state x="769" y="494" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594587633853">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
