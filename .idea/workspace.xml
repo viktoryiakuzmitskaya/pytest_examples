@@ -25,14 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Added test comparing groups list from UI and from database">
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Modified tests for adding and deleting a group - group list now is retrieved from the database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/groups.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_db_matches_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_db_matches_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +177,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--check_ui&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
@@ -221,11 +216,11 @@
     </configuration>
     <list>
       <item itemvalue="Python.group" />
+      <item itemvalue="Python.check_db_connection" />
       <item itemvalue="Python tests.pytest in test_del_contact.py" />
       <item itemvalue="Python tests.pytest in test_edit_contact.py" />
       <item itemvalue="Python tests.pytest in test_edit_group.py" />
       <item itemvalue="Python tests.pytest in test_add_group.py" />
-      <item itemvalue="Python.check_db_connection" />
       <item itemvalue="Python tests.pytest in test_db_matches_ui.py" />
       <item itemvalue="Python tests.pytest in test_del_group.py" />
     </list>
@@ -249,13 +244,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594587421217</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Introduced additional class for a contact">
-      <created>1594647271017</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1594647271018</updated>
     </task>
     <task id="LOCAL-00012" summary="Moved navigation to certain pages from test into help methods for both groups and contacts">
       <created>1595193035668</created>
@@ -593,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598117672961</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Modified tests for adding and deleting a group - group list now is retrieved from the database">
+      <created>1598126174143</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1598126174143</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -632,7 +627,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added caching and hashing for contacts" />
     <MESSAGE value="Added random deletion and modification for groups" />
     <MESSAGE value="Added random deletion and modification for contacts" />
     <MESSAGE value="Fixed test on some contact modification" />
@@ -657,17 +651,18 @@
     <MESSAGE value="Added a test file to check database connection" />
     <MESSAGE value="Added fixture for database connection" />
     <MESSAGE value="Added test comparing groups list from UI and from database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test comparing groups list from UI and from database" />
+    <MESSAGE value="Modified tests for adding and deleting a group - group list now is retrieved from the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified tests for adding and deleting a group - group list now is retrieved from the database" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597598466674">
+    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598126657256">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597598466674" />
-    <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598124460763">
+    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598126657256" />
+    <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598175108156">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598124460763" />
+    <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598175108156" />
     <state x="689" y="370" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1597412508086">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -680,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="669" y="163" key="#pytest_in_test_add_contact.py/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597511288094" />
-    <state x="669" y="163" key="#pytest_in_test_add_group.py" timestamp="1597511396004">
+    <state x="669" y="163" key="#pytest_in_test_add_group.py" timestamp="1598126646509">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="669" y="163" key="#pytest_in_test_add_group.py/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597511396004" />
+    <state x="669" y="163" key="#pytest_in_test_add_group.py/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598126646509" />
     <state x="669" y="163" key="#pytest_in_test_contact_data.py" timestamp="1597511451730">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -708,22 +703,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="335" key="FileChooserDialogImpl/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597509676587" />
-    <state width="1899" height="385" key="GridCell.Tab.0.bottom" timestamp="1598125722922">
+    <state width="1899" height="437" key="GridCell.Tab.0.bottom" timestamp="1598174785667">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="385" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598125722922" />
-    <state width="1899" height="385" key="GridCell.Tab.0.center" timestamp="1598125722922">
+    <state width="1899" height="437" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598174785667" />
+    <state width="1899" height="437" key="GridCell.Tab.0.center" timestamp="1598174785666">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="385" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598125722922" />
-    <state width="1899" height="385" key="GridCell.Tab.0.left" timestamp="1598125722921">
+    <state width="1899" height="437" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598174785666" />
+    <state width="1899" height="437" key="GridCell.Tab.0.left" timestamp="1598174785666">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="385" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598125722921" />
-    <state width="1899" height="385" key="GridCell.Tab.0.right" timestamp="1598125722922">
+    <state width="1899" height="437" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598174785666" />
+    <state width="1899" height="437" key="GridCell.Tab.0.right" timestamp="1598174785667">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="385" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598125722922" />
+    <state width="1899" height="437" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598174785667" />
     <state width="1899" height="401" key="GridCell.Tab.1.bottom" timestamp="1598125697283">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -752,10 +747,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="461" y="225" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598097860688" />
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1598117683834">
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1598126185476">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598117683834" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598126185476" />
     <state x="769" y="494" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594587633853">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
