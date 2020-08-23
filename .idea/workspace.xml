@@ -25,10 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Added removable ui check">
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Added conditions of selection of loaded data">
+      <change afterPath="$PROJECT_DIR$/fixture/orm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/check_db_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_db_connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,13 +244,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594587421217</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Changed framework from unittest to pytest and implemented fixtures both for groups and contacts">
-      <created>1595195705926</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1595195705926</updated>
     </task>
     <task id="LOCAL-00014" summary="Added packages for different responsibility areas (test for group creation only)">
       <created>1595199356771</created>
@@ -588,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598175134015</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Added conditions of selection of loaded data">
+      <created>1598190283478</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1598190283479</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -627,7 +627,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added random deletion and modification for contacts" />
     <MESSAGE value="Fixed test on some contact modification" />
     <MESSAGE value="Optimized work with strings in session helper" />
     <MESSAGE value="Added secondaryphone field to the Contact class" />
@@ -652,7 +651,8 @@
     <MESSAGE value="Added test comparing groups list from UI and from database" />
     <MESSAGE value="Modified tests for adding and deleting a group - group list now is retrieved from the database" />
     <MESSAGE value="Added removable ui check" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added removable ui check" />
+    <MESSAGE value="Added conditions of selection of loaded data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added conditions of selection of loaded data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598126657256">
@@ -703,22 +703,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="335" key="FileChooserDialogImpl/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597509676587" />
-    <state width="1899" height="376" key="GridCell.Tab.0.bottom" timestamp="1598178452577">
+    <state width="1914" height="342" key="GridCell.Tab.0.bottom" timestamp="1598194951970">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="376" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598178452577" />
-    <state width="1899" height="376" key="GridCell.Tab.0.center" timestamp="1598178452577">
+    <state width="1914" height="342" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598194951970" />
+    <state width="1914" height="342" key="GridCell.Tab.0.center" timestamp="1598194951969">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="376" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598178452577" />
-    <state width="1899" height="376" key="GridCell.Tab.0.left" timestamp="1598178452577">
+    <state width="1914" height="342" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598194951969" />
+    <state width="1914" height="342" key="GridCell.Tab.0.left" timestamp="1598194951969">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="376" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598178452577" />
-    <state width="1899" height="376" key="GridCell.Tab.0.right" timestamp="1598178452577">
+    <state width="1914" height="342" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598194951969" />
+    <state width="1914" height="342" key="GridCell.Tab.0.right" timestamp="1598194951969">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="376" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598178452577" />
+    <state width="1914" height="342" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598194951969" />
     <state width="1899" height="401" key="GridCell.Tab.1.bottom" timestamp="1598125697283">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
