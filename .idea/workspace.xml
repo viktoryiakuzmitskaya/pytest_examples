@@ -25,12 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Added object relationships">
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Temporarily removed punctuation from data generating">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/contacts.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/groups.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
       <recent name="D:\IT\QA\Courses\Python-Programming-For-Testers\Projects\python_test\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_edit_group.py">
     <configuration name="check_db_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,6 +189,22 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_del_group.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="python_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_edit_contact.py" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -224,19 +240,20 @@
     <list>
       <item itemvalue="Python.group" />
       <item itemvalue="Python.check_db_connection" />
+      <item itemvalue="Python.contact" />
       <item itemvalue="Python tests.pytest in test_del_contact.py" />
       <item itemvalue="Python tests.pytest in test_edit_contact.py" />
       <item itemvalue="Python tests.pytest in test_edit_group.py" />
-      <item itemvalue="Python.contact" />
+      <item itemvalue="Python tests.pytest in test_del_group.py" />
       <item itemvalue="Python tests.pytest in test_add_contact.py" />
       <item itemvalue="Python tests.pytest in test_add_group.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test_add_group.py" />
+        <item itemvalue="Python.group" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python.contact" />
-        <item itemvalue="Python.group" />
         <item itemvalue="Python.check_db_connection" />
       </list>
     </recent_temporary>
@@ -251,13 +268,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594587421217</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Extracted subsidiary class for group management">
-      <created>1595201253803</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1595201253803</updated>
     </task>
     <task id="LOCAL-00017" summary="Extracted helper class for contact management and manager class for initialization of all helpers">
       <created>1595202620714</created>
@@ -595,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598216067580</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Temporarily removed punctuation from data generating">
+      <created>1598294039594</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1598294039594</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -634,7 +651,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added secondaryphone field to the Contact class" />
     <MESSAGE value="Added test for comparing phones" />
     <MESSAGE value="Added test for comparing phones of random contact" />
     <MESSAGE value="Added test for comparing emails of random contact" />
@@ -659,17 +675,18 @@
     <MESSAGE value="Added conditions of selection of loaded data" />
     <MESSAGE value="Added ORM fixture" />
     <MESSAGE value="Added object relationships" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added object relationships" />
+    <MESSAGE value="Temporarily removed punctuation from data generating" />
+    <option name="LAST_COMMIT_MESSAGE" value="Temporarily removed punctuation from data generating" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598126657256">
+    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598302247728">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598126657256" />
-    <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598176721320">
+    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598302247728" />
+    <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598301467662">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598176721320" />
+    <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598301467662" />
     <state x="689" y="370" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1597412508086">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -694,6 +711,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="669" y="163" key="#pytest_in_test_del_contact.py/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597511481544" />
+    <state x="669" y="163" key="#pytest_in_test_del_group.py" timestamp="1598294545920">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="669" y="163" key="#pytest_in_test_del_group.py/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598294545920" />
     <state x="669" y="163" key="#pytest_in_test_edit_contact.py" timestamp="1597511539654">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -710,38 +731,38 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="335" key="FileChooserDialogImpl/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597509676587" />
-    <state width="1899" height="372" key="GridCell.Tab.0.bottom" timestamp="1598293901626">
+    <state width="1899" height="407" key="GridCell.Tab.0.bottom" timestamp="1598302257273">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="372" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598293901626" />
-    <state width="1899" height="372" key="GridCell.Tab.0.center" timestamp="1598293901626">
+    <state width="1899" height="407" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598302257273" />
+    <state width="1899" height="407" key="GridCell.Tab.0.center" timestamp="1598302257273">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="372" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598293901626" />
-    <state width="1899" height="372" key="GridCell.Tab.0.left" timestamp="1598293901626">
+    <state width="1899" height="407" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598302257273" />
+    <state width="1899" height="407" key="GridCell.Tab.0.left" timestamp="1598302257273">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="372" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598293901626" />
-    <state width="1899" height="372" key="GridCell.Tab.0.right" timestamp="1598293901626">
+    <state width="1899" height="407" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598302257273" />
+    <state width="1899" height="407" key="GridCell.Tab.0.right" timestamp="1598302257273">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="372" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598293901626" />
-    <state width="1899" height="401" key="GridCell.Tab.1.bottom" timestamp="1598125697283">
+    <state width="1899" height="407" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598302257273" />
+    <state width="1899" height="309" key="GridCell.Tab.1.bottom" timestamp="1598301637928">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="401" key="GridCell.Tab.1.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598125697283" />
-    <state width="1899" height="401" key="GridCell.Tab.1.center" timestamp="1598125697283">
+    <state width="1899" height="309" key="GridCell.Tab.1.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598301637928" />
+    <state width="1899" height="309" key="GridCell.Tab.1.center" timestamp="1598301637928">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="401" key="GridCell.Tab.1.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598125697283" />
-    <state width="1899" height="401" key="GridCell.Tab.1.left" timestamp="1598125697283">
+    <state width="1899" height="309" key="GridCell.Tab.1.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598301637928" />
+    <state width="1899" height="309" key="GridCell.Tab.1.left" timestamp="1598301637928">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="401" key="GridCell.Tab.1.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598125697283" />
-    <state width="1899" height="401" key="GridCell.Tab.1.right" timestamp="1598125697283">
+    <state width="1899" height="309" key="GridCell.Tab.1.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598301637928" />
+    <state width="1899" height="309" key="GridCell.Tab.1.right" timestamp="1598301637928">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="401" key="GridCell.Tab.1.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598125697283" />
+    <state width="1899" height="309" key="GridCell.Tab.1.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598301637928" />
     <state x="775" y="514" key="ReplaceDuplicatesPrompt" timestamp="1596441276441">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -754,10 +775,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="461" y="225" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598097860688" />
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1598216093632">
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1598294067570">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598216093632" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598294067570" />
     <state x="769" y="494" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594587633853">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
