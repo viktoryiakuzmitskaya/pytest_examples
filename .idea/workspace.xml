@@ -25,12 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Temporarily removed punctuation from data generating">
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Modified test to create, edit, delete group so the group list is loaded from the database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/groups.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_db_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_db_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/orm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +80,7 @@
       <recent name="D:\IT\QA\Courses\Python-Programming-For-Testers\Projects\python_test\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_edit_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_edit_contact.py">
     <configuration name="check_db_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -221,7 +224,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_edit_group.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+    <configuration name="pytest in test_edit_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -250,11 +253,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_edit_group.py" />
+        <item itemvalue="Python tests.pytest in test_add_contact.py" />
+        <item itemvalue="Python.check_db_connection" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python.group" />
-        <item itemvalue="Python tests.pytest in test_add_contact.py" />
-        <item itemvalue="Python.contact" />
-        <item itemvalue="Python.check_db_connection" />
       </list>
     </recent_temporary>
   </component>
@@ -268,13 +271,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594587421217</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Extracted helper class for contact management and manager class for initialization of all helpers">
-      <created>1595202620714</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1595202620715</updated>
     </task>
     <task id="LOCAL-00018" summary="Added common fixture for all tests">
       <created>1595206447653</created>
@@ -612,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598294039594</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Modified test to create, edit, delete group so the group list is loaded from the database">
+      <created>1598302388594</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1598302388595</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -651,7 +654,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added test for comparing phones" />
     <MESSAGE value="Added test for comparing phones of random contact" />
     <MESSAGE value="Added test for comparing emails of random contact" />
     <MESSAGE value="Added test for comparing address of random contact" />
@@ -676,13 +678,14 @@
     <MESSAGE value="Added ORM fixture" />
     <MESSAGE value="Added object relationships" />
     <MESSAGE value="Temporarily removed punctuation from data generating" />
-    <option name="LAST_COMMIT_MESSAGE" value="Temporarily removed punctuation from data generating" />
+    <MESSAGE value="Modified test to create, edit, delete group so the group list is loaded from the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified test to create, edit, delete group so the group list is loaded from the database" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598302247728">
+    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598388540822">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598302247728" />
+    <state x="617" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598388540822" />
     <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598301467662">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -715,10 +718,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="669" y="163" key="#pytest_in_test_del_group.py/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598294545920" />
-    <state x="669" y="163" key="#pytest_in_test_edit_contact.py" timestamp="1597511539654">
+    <state x="669" y="163" key="#pytest_in_test_edit_contact.py" timestamp="1598388013183">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="669" y="163" key="#pytest_in_test_edit_contact.py/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597511539654" />
+    <state x="669" y="163" key="#pytest_in_test_edit_contact.py/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598388013183" />
     <state x="669" y="163" key="#pytest_in_test_edit_group.py" timestamp="1597511558374">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -731,22 +734,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="335" key="FileChooserDialogImpl/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597509676587" />
-    <state width="1899" height="407" key="GridCell.Tab.0.bottom" timestamp="1598302257273">
+    <state width="1899" height="464" key="GridCell.Tab.0.bottom" timestamp="1598388216313">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="407" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598302257273" />
-    <state width="1899" height="407" key="GridCell.Tab.0.center" timestamp="1598302257273">
+    <state width="1899" height="464" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598388216313" />
+    <state width="1899" height="464" key="GridCell.Tab.0.center" timestamp="1598388216312">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="407" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598302257273" />
-    <state width="1899" height="407" key="GridCell.Tab.0.left" timestamp="1598302257273">
+    <state width="1899" height="464" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598388216312" />
+    <state width="1899" height="464" key="GridCell.Tab.0.left" timestamp="1598388216312">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="407" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598302257273" />
-    <state width="1899" height="407" key="GridCell.Tab.0.right" timestamp="1598302257273">
+    <state width="1899" height="464" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598388216312" />
+    <state width="1899" height="464" key="GridCell.Tab.0.right" timestamp="1598388216313">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="407" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598302257273" />
+    <state width="1899" height="464" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598388216313" />
     <state width="1899" height="309" key="GridCell.Tab.1.bottom" timestamp="1598301637928">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

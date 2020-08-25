@@ -51,6 +51,10 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
 
+    def select_contact_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector("input[value='%s" % id).click()
+
     def delete_first_contact(self):
         self.delete_contact_by_index(0)
 
@@ -60,6 +64,19 @@ class ContactHelper:
         self.open_home_page()
         # select first contact
         self.select_contact_by_index(index)
+        # submit deletion
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        wd.switch_to_alert().accept()
+        wd.find_element_by_css_selector("div.msgbox")
+        self.open_home_page()
+        self.contact_cache = None
+
+    def delete_contact_by_id(self, id):
+        wd = self.app.wd
+        # check whether delete is available, if not, go to the home page
+        self.open_home_page()
+        # select first contact
+        self.select_contact_by_id(id)
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to_alert().accept()
@@ -78,6 +95,20 @@ class ContactHelper:
         self.select_contact_by_index(index)
         # edit contact
         wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
+        self.fill_out_form(new_contact_data)
+        # submit modification
+        wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
+        self.open_home_page()
+        self.contact_cache = None
+
+    def edit_contact_by_id(self, id, new_contact_data):
+        wd = self.app.wd
+        # check whether edit is available, if not, go to the home page
+        self.open_home_page()
+        # select first contact
+        self.select_contact_by_id(id)
+        # edit contact
+        wd.find_element_by_css_selector("a[href='edit.php?id=%s" % id).click()
         self.fill_out_form(new_contact_data)
         # submit modification
         wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
