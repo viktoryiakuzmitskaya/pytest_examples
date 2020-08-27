@@ -62,7 +62,7 @@ class ContactHelper:
         wd = self.app.wd
         # check whether delete is available, if not, go to the home page
         self.open_home_page()
-        # select first contact
+        # select contact
         self.select_contact_by_index(index)
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
@@ -75,7 +75,7 @@ class ContactHelper:
         wd = self.app.wd
         # check whether delete is available, if not, go to the home page
         self.open_home_page()
-        # select first contact
+        # select contact
         self.select_contact_by_id(id)
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
@@ -91,7 +91,7 @@ class ContactHelper:
         wd = self.app.wd
         # check whether edit is available, if not, go to the home page
         self.open_home_page()
-        # select first contact
+        # select contact
         self.select_contact_by_index(index)
         # edit contact
         wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
@@ -105,7 +105,7 @@ class ContactHelper:
         wd = self.app.wd
         # check whether edit is available, if not, go to the home page
         self.open_home_page()
-        # select first contact
+        # select contact
         self.select_contact_by_id(id)
         # edit contact
         wd.find_element_by_css_selector("a[href='edit.php?id=%s" % id).click()
@@ -184,3 +184,13 @@ class ContactHelper:
         secondaryphone = re.search("P: (.*)", text).group(1)
         return Contact(homephone=homephone, workphone=workphone,
                        mobilephone=mobilephone, secondaryphone=secondaryphone)
+
+    def add_contact_to_group(self, contact_id, group_id, group_name):
+        wd = self.app.wd
+        self.open_home_page()
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_name("to_group").click()
+        wd.find_element_by_xpath("(//option[@value=%s])[2]" % group_id).click()
+        wd.find_element_by_name("add").click()
+        wd.find_element_by_link_text('group page "%s"' % group_name)
+        self.open_home_page()
