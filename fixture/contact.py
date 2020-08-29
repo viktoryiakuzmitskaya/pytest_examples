@@ -1,6 +1,7 @@
 from model.contact import Contact
 from selenium.webdriver.support.ui import Select
 import re
+import random
 
 class ContactHelper:
     def __init__(self, app):
@@ -117,8 +118,9 @@ class ContactHelper:
 
     def open_home_page(self):
         wd = self.app.wd
+        check = wd.current_url.endswith("/addressbook/")
         if not (wd.current_url.endswith("/addressbook/")):
-            wd.find_element_by_link_text("home").click()
+            wd.find_element_by_id("logo").click()
 
     def count(self):
         wd = self.app.wd
@@ -142,7 +144,6 @@ class ContactHelper:
                 all_phones = cells[5].text
                 self.contact_cache.append(Contact(id=id, firstname=firstname, lastname=lastname, address=address, all_emails_from_home_page=all_emails, all_phones_from_home_page=all_phones))
         return list(self.contact_cache)
-
 
     def open_contact_to_edit_by_index(self, index):
         wd = self.app.wd
@@ -192,5 +193,32 @@ class ContactHelper:
         wd.find_element_by_name("to_group").click()
         wd.find_element_by_xpath("(//option[@value=%s])[2]" % group_id).click()
         wd.find_element_by_name("add").click()
-        wd.find_element_by_link_text('group page "%s"' % group_name)
+        wd.find_element_by_link_text('group page "%s"' % group_name).click()
+
+    def remove_contact_from_group(self, group_id, group_name, contact_id):
+        wd = self.app.wd
         self.open_home_page()
+        wd.find_element_by_name("group").click()
+        wd.find_element_by_xpath("//option[@value=%s]" % group_id).click()
+        contacts_ids_in_group = self.get_contacts_ids_on_group_page(group_id)
+        if contact_id not in contacts_ids_in_group:
+            self.add_contact_to_group(contact_id, group_id, group_name)
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_name("remove").click()
+        wd.find_element_by_css_selector("div.msgbox")
+
+
+
+    def get_contacts_ids_on_group_page(self, group_id):
+        wd = self.app.wd
+        if not wd.current_url.endswith("/addressbook/?group=%s" % group_id):
+            wd.get("https://localhost/addressbook/?group=%s" % group_id)
+        contacts_ids = []
+        for row in wd.find_elements_by_name("entry"):
+            cells = row.find_elements_by_tag_name("td")
+            id = cells[0].find_element_by_tag_name("input").get_attribute("value")
+            contacts_ids.append(id)
+        return contacts_ids
+
+
+

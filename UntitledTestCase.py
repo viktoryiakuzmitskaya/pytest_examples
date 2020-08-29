@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re
 
-class AddContactToGroup(unittest.TestCase):
+class UntitledTestCase(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
@@ -15,26 +15,15 @@ class AddContactToGroup(unittest.TestCase):
         self.verificationErrors = []
         self.accept_next_alert = True
     
-    def test_add_contact_to_group(self):
+    def test_untitled_test_case(self):
         driver = self.driver
         driver.get("https://localhost/addressbook/")
-        driver.find_element_by_id("434").click()
-        driver.find_element_by_name("to_group").click()
-        Select(driver.find_element_by_name("to_group")).select_by_visible_text("nameeawV")
-        driver.find_element_by_xpath("(//option[@value='369'])[2]").click()
-        driver.find_element_by_name("add").click()
-        driver.find_element_by_link_text("group page \"nameeawV\"").click()
-        driver.find_element_by_link_text("home").click()
-        driver.find_element_by_link_text("home").click()
-        driver.find_element_by_id("logo").click()
+        driver.find_element_by_name("group").click()
+        Select(driver.find_element_by_name("group")).select_by_visible_text("nameV")
+        driver.find_element_by_xpath("//option[@value='372']").click()
         driver.find_element_by_id("416").click()
-        driver.find_element_by_name("to_group").click()
-        Select(driver.find_element_by_name("to_group")).select_by_visible_text("nameV")
-        driver.find_element_by_xpath("(//option[@value='372'])[2]").click()
-        driver.find_element_by_name("add").click()
-        driver.find_element_by_link_text("group page \"nameV\"").click()
+        driver.find_element_by_name("remove").click()
         driver.find_element_by_id("logo").click()
-        driver.find_element_by_link_text("groups").click()
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
