@@ -25,17 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Added test for removing contact from a group">
+    <list default="true" id="c6576370-282e-4a0d-abed-faec859847af" name="Default Changelist" comment="Fixed test for adding contact to group and removing contact from group">
+      <change afterPath="$PROJECT_DIR$/bdd/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bdd/group_scenarios.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bdd/group_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bdd/groups.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UntitledTestCase.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/check_db_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_db_connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/contacts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/groups.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/orm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_contact_to_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact_to_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_remove_contact_from_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_remove_contact_from_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -82,26 +78,37 @@
       <recent name="D:\IT\QA\Courses\Python-Programming-For-Testers\Projects\python_test\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_remove_contact_from_group.py">
-    <configuration name="check_db_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for bdd.group_scenarios.test_delete_group">
+    <configuration name="pytest for bdd.group_scenarios.test_delete_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_db_connection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;bdd.group_scenarios.test_delete_group&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in group_scenarios.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/bdd/group_scenarios.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -117,22 +124,6 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_contact.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_add_contact_to_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_contact_to_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -218,21 +209,21 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.pytest in test_del_contact.py" />
-      <item itemvalue="Python tests.pytest in test_edit_contact.py" />
       <item itemvalue="Python tests.pytest in test_del_group.py" />
-      <item itemvalue="Python tests.pytest in test_add_group.py" />
+      <item itemvalue="Python tests.pytest in test_edit_contact.py" />
       <item itemvalue="Python tests.pytest in test_add_contact.py" />
-      <item itemvalue="Python.check_db_connection" />
-      <item itemvalue="Python tests.pytest in test_add_contact_to_group.py" />
+      <item itemvalue="Python tests.pytest in test_add_group.py" />
       <item itemvalue="Python tests.pytest in test_remove_contact_from_group.py" />
+      <item itemvalue="Python tests.pytest in group_scenarios.py" />
+      <item itemvalue="Python tests.pytest for bdd.group_scenarios.test_delete_group" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_remove_contact_from_group.py" />
-        <item itemvalue="Python tests.pytest in test_add_contact_to_group.py" />
-        <item itemvalue="Python.check_db_connection" />
-        <item itemvalue="Python tests.pytest in test_add_contact.py" />
+        <item itemvalue="Python tests.pytest for bdd.group_scenarios.test_delete_group" />
+        <item itemvalue="Python tests.pytest in group_scenarios.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
+        <item itemvalue="Python tests.pytest in test_add_contact.py" />
+        <item itemvalue="Python tests.pytest in test_remove_contact_from_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -665,6 +656,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="92" y="92" width="1736" height="976" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598301467662" />
+    <state x="706" y="382" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599921177786">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="706" y="382" key="#com.intellij.fileTypes.FileTypeChooser/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1599921177786" />
     <state x="689" y="370" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1597412508086">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -709,22 +704,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="335" key="FileChooserDialogImpl/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1597509676587" />
-    <state width="1899" height="328" key="GridCell.Tab.0.bottom" timestamp="1598733497656">
+    <state width="1899" height="441" key="GridCell.Tab.0.bottom" timestamp="1599924759021">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="328" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598733497656" />
-    <state width="1899" height="328" key="GridCell.Tab.0.center" timestamp="1598733497656">
+    <state width="1899" height="441" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1599924759021" />
+    <state width="1899" height="441" key="GridCell.Tab.0.center" timestamp="1599924759020">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="328" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598733497656" />
-    <state width="1899" height="328" key="GridCell.Tab.0.left" timestamp="1598733497654">
+    <state width="1899" height="441" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1599924759020" />
+    <state width="1899" height="441" key="GridCell.Tab.0.left" timestamp="1599924759020">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="328" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598733497654" />
-    <state width="1899" height="328" key="GridCell.Tab.0.right" timestamp="1598733497656">
+    <state width="1899" height="441" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1599924759020" />
+    <state width="1899" height="441" key="GridCell.Tab.0.right" timestamp="1599924759021">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="328" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598733497656" />
+    <state width="1899" height="441" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1599924759021" />
     <state width="1899" height="328" key="GridCell.Tab.1.bottom" timestamp="1598733380297">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -749,10 +744,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="685" y="300" key="RollbackChangesDialog/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598527531128" />
-    <state x="461" y="225" key="SettingsEditor" timestamp="1598097860688">
+    <state x="461" y="225" key="SettingsEditor" timestamp="1599921069767">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="461" y="225" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1598097860688" />
+    <state x="461" y="225" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1599921069767" />
     <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1598710522183">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
