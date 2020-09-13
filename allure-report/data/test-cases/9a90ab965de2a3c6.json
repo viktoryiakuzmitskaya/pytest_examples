@@ -1,0 +1,201 @@
+{
+  "uid" : "9a90ab965de2a3c6",
+  "name" : "test_add_contact[None:fn2; ln4l7630430; ad7422923t2O0; hm668039095161554; mb5n45g253548826P6; wp87A78p739gg5828428; sp88059425x07N8790; e85x9K48856; e26378574998524ebgE5; e39h1lx3Z329V7; None; None]",
+  "fullName" : "test.test_add_contact#test_add_contact",
+  "historyId" : "7ba3bd1ee215d527fdfdb17e8b9a4826",
+  "time" : {
+    "start" : 1600017332706,
+    "stop" : 1600017336741,
+    "duration" : 4035
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "db",
+    "time" : {
+      "start" : 1600017313331,
+      "stop" : 1600017313353,
+      "duration" : 22
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1600017313331,
+      "stop" : 1600017313331,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1600017331961,
+      "stop" : 1600017332704,
+      "duration" : 743
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "check_ui",
+    "time" : {
+      "start" : 1600017332705,
+      "stop" : 1600017332705,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given a contact list",
+      "time" : {
+        "start" : 1600017332707,
+        "stop" : 1600017332714,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When I add a contact None:fn2; ln4l7630430; ad7422923t2O0; hm668039095161554; mb5n45g253548826P6; wp87A78p739gg5828428; sp88059425x07N8790; e85x9K48856; e26378574998524ebgE5; e39h1lx3Z329V7; None; None to the list",
+      "time" : {
+        "start" : 1600017332714,
+        "stop" : 1600017336735,
+        "duration" : 4021
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "the new contact list is equal to the old list with added contact",
+      "time" : {
+        "start" : 1600017336736,
+        "stop" : 1600017336740,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1600017400764,
+      "stop" : 1600017400764,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1600017399434,
+      "stop" : 1600017400762,
+      "duration" : 1328
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_contact"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-0D17MAB"
+  }, {
+    "name" : "thread",
+    "value" : "16088-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add_contact"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "json_contacts",
+    "value" : "None:fn2; ln4l7630430; ad7422923t2O0; hm668039095161554; mb5n45g253548826P6; wp87A78p739gg5828428; sp88059425x07N8790; e85x9K48856; e26378574998524ebgE5; e39h1lx3Z329V7; None; None"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9a90ab965de2a3c6.json",
+  "parameterValues" : [ "None:fn2; ln4l7630430; ad7422923t2O0; hm668039095161554; mb5n45g253548826P6; wp87A78p739gg5828428; sp88059425x07N8790; e85x9K48856; e26378574998524ebgE5; e39h1lx3Z329V7; None; None" ]
+}

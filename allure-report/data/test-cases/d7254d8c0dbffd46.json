@@ -1,0 +1,88 @@
+{
+  "uid" : "d7254d8c0dbffd46",
+  "name" : "test_delete_group",
+  "fullName" : "bdd.group_scenarios#test_delete_group",
+  "historyId" : "d02032cd9cba9ce06c6f3a3f52a3a553",
+  "time" : {
+    "start" : 1600017544272,
+    "stop" : 1600017545099,
+    "duration" : 827
+  },
+  "description" : "groups.feature: Delete a group",
+  "descriptionHtml" : "<p>groups.feature: Delete a group</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "stop",
+    "time" : {
+      "start" : 1600017526792,
+      "stop" : 1600017526792,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1600017545109,
+      "stop" : 1600017546227,
+      "duration" : 1118
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures"
+  }, {
+    "name" : "parentSuite",
+    "value" : "bdd"
+  }, {
+    "name" : "suite",
+    "value" : "group_scenarios"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-0D17MAB"
+  }, {
+    "name" : "thread",
+    "value" : "9952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "bdd.group_scenarios"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures" ]
+  },
+  "source" : "d7254d8c0dbffd46.json",
+  "parameterValues" : [ ]
+}
