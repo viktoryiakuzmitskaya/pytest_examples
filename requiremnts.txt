@@ -22,3 +22,5 @@ setuptools~=49.2.0
 zipp~=3.1.0
 PyMySQL~=0.10.0
 jsonpickle~=1.4.1
+lxml
+allure-pytest
